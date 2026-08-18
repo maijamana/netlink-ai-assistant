@@ -1,0 +1,31 @@
+Judging 1/18: G01
+Judging 2/18: G02
+Judging 3/18: G03
+Judging 4/18: G04
+Judging 5/18: G05
+Judging 6/18: G06
+Judging 7/18: G07
+Judging 8/18: G08
+Judging 9/18: G09
+Judging 10/18: G10
+Judging 11/18: G11
+Judging 12/18: G12
+Judging 13/18: G13
+Judging 14/18: G14
+Judging 15/18: G15
+Judging 16/18: G16
+Judging 17/18: G17
+Judging 18/18: G18
+
+=== LLM JUDGE SUMMARY ===
+Correctness: 1.944/2 (0.972)
+Faithfulness: 2.000/2 (1.000)
+
+=== NON-PERFECT CASES ===
+
+G02: Я заплатив, але інтернету немає, лампочки всі зелені
+Correctness: 1/2
+Faithfulness: 2/2
+Reason: The generated answer correctly states that access is automatically restored within 15 minutes after payment if the indicators are green, which aligns with the KB. However, it fails to mention that green indicators can still correspond to a blockage due to debt, which is important given the user's issue. All claims made are fully supported by the KB, hence full faithfulness.
+
+Detailed judged results saved to: /Users/mac/Desktop/netlink-ai-assistant/results/generation_judged_v1.json

@@ -1,0 +1,268 @@
+{
+  "summary": {
+    "evaluated_examples": 15,
+    "hit_at_1": 0.9333333333333333,
+    "hit_at_3": 1,
+    "mrr": 0.9666666666666667,
+    "source_recall_at_3": 0.9666666666666667
+  },
+  "results": [
+    {
+      "id": "G01",
+      "question": "Не працює інтернет, на роутері горить червоний LOS",
+      "category": "multi_source",
+      "expected_sources": [
+        "KB-01",
+        "KB-10"
+      ],
+      "retrieved_ids": [
+        "KB-01",
+        "KB-02",
+        "KB-04"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 0.5
+    },
+    {
+      "id": "G02",
+      "question": "Я заплатив, але інтернету немає, лампочки всі зелені",
+      "category": "confusable",
+      "expected_sources": [
+        "KB-04"
+      ],
+      "retrieved_ids": [
+        "KB-01",
+        "KB-04",
+        "KB-08"
+      ],
+      "hit_at_1": 0,
+      "hit_at_3": 1,
+      "reciprocal_rank": 0.5,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G03",
+      "question": "Хочу перейти на дешевший тариф",
+      "category": "single_source",
+      "expected_sources": [
+        "KB-05"
+      ],
+      "retrieved_ids": [
+        "KB-05",
+        "KB-11",
+        "KB-08"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G04",
+      "question": "Чому в мене швидкість 70 замість 200?",
+      "category": "single_source",
+      "expected_sources": [
+        "KB-06"
+      ],
+      "retrieved_ids": [
+        "KB-06",
+        "KB-02",
+        "KB-11"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G05",
+      "question": "Скільки коштує виклик майстра?",
+      "category": "single_source",
+      "expected_sources": [
+        "KB-08"
+      ],
+      "retrieved_ids": [
+        "KB-08",
+        "KB-11",
+        "KB-07"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G06",
+      "question": "Чи можна заморозити інтернет на час відпустки?",
+      "category": "single_source",
+      "expected_sources": [
+        "KB-09"
+      ],
+      "retrieved_ids": [
+        "KB-09",
+        "KB-07",
+        "KB-02"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G07",
+      "question": "Що таке LOS?",
+      "category": "exact_term",
+      "expected_sources": [
+        "KB-01"
+      ],
+      "retrieved_ids": [
+        "KB-01",
+        "KB-10",
+        "KB-11"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G08",
+      "question": "Скільки коштує Гіга 1000?",
+      "category": "exact_fact",
+      "expected_sources": [
+        "KB-11"
+      ],
+      "retrieved_ids": [
+        "KB-11",
+        "KB-06",
+        "KB-07"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G10",
+      "question": "Можна на два місяці призупинити послугу, але не втратити тариф?",
+      "category": "paraphrase",
+      "expected_sources": [
+        "KB-09"
+      ],
+      "retrieved_ids": [
+        "KB-09",
+        "KB-05",
+        "KB-07"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G11",
+      "question": "Через скільки часу після оплати має відновитися інтернет?",
+      "category": "exact_fact",
+      "expected_sources": [
+        "KB-04"
+      ],
+      "retrieved_ids": [
+        "KB-04",
+        "KB-09",
+        "KB-02"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G12",
+      "question": "Інтернет працює, але швидкість сильно нижча за тарифну. Що перевірити?",
+      "category": "paraphrase",
+      "expected_sources": [
+        "KB-06"
+      ],
+      "retrieved_ids": [
+        "KB-06",
+        "KB-01",
+        "KB-11"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G13",
+      "question": "У мене червоний LOS. Що це означає і куди звертатися?",
+      "category": "multi_source",
+      "expected_sources": [
+        "KB-01",
+        "KB-10"
+      ],
+      "retrieved_ids": [
+        "KB-01",
+        "KB-10",
+        "KB-04"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G14",
+      "question": "Скільки коштує оренда роутера?",
+      "category": "exact_fact",
+      "expected_sources": [
+        "KB-07"
+      ],
+      "retrieved_ids": [
+        "KB-07",
+        "KB-11",
+        "KB-02"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G15",
+      "question": "Коли виклик майстра буде безкоштовним?",
+      "category": "policy_condition",
+      "expected_sources": [
+        "KB-08"
+      ],
+      "retrieved_ids": [
+        "KB-08",
+        "KB-07",
+        "KB-11"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    },
+    {
+      "id": "G18",
+      "question": "Мій орендований роутер зламався. Що з ним робити?",
+      "category": "paraphrase",
+      "expected_sources": [
+        "KB-07"
+      ],
+      "retrieved_ids": [
+        "KB-07",
+        "KB-02",
+        "KB-01"
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "reciprocal_rank": 1.0,
+      "source_recall_3": 1.0
+    }
+  ]
+}

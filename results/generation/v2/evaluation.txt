@@ -1,0 +1,28 @@
+Loading RAG pipeline...
+Evaluating 1/18: G01
+Evaluating 2/18: G02
+Evaluating 3/18: G03
+Evaluating 4/18: G04
+Evaluating 5/18: G05
+Evaluating 6/18: G06
+Evaluating 7/18: G07
+Evaluating 8/18: G08
+Evaluating 9/18: G09
+Evaluating 10/18: G10
+Evaluating 11/18: G11
+Evaluating 12/18: G12
+Evaluating 13/18: G13
+Evaluating 14/18: G14
+Evaluating 15/18: G15
+Evaluating 16/18: G16
+Evaluating 17/18: G17
+Evaluating 18/18: G18
+
+=== GENERATION / ATTRIBUTION SUMMARY ===
+Answerability Accuracy: 1.000
+Citation Recall:        0.972
+Citation Precision:     0.963
+
+=== FAILED ANSWERABILITY CASES ===
+None
+

@@ -1,0 +1,17 @@
+Loading retriever...
+Running retrieval evaluation...
+
+=== RETRIEVAL SUMMARY ===
+Evaluated examples: 15
+Hit@1: 0.933
+Hit@3: 1.000
+MRR:   0.967
+Source Recall@3: 0.967
+
+=== FAILED HIT@1 CASES ===
+
+G02: Я заплатив, але інтернету немає, лампочки всі зелені
+Expected: ['KB-04']
+Retrieved: ['KB-01', 'KB-04', 'KB-08']
+
+Detailed results saved to: /Users/mac/Desktop/netlink-ai-assistant/results/retrieval/evaluation.json

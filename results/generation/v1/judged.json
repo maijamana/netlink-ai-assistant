@@ -1,0 +1,373 @@
+[
+  {
+    "id": "G01",
+    "question": "Не працює інтернет, на роутері горить червоний LOS",
+    "category": "multi_source",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Червоний LOS означає обрив оптичного кабелю. Потрібна заявка або звернення на аварійну лінію.",
+    "generated_answer": "Червоний індикатор «LOS» на роутері означає обрив оптичного кабелю, через що інтернет не працює, і для цього потрібна заявка на ремонт.",
+    "expected_sources": [
+      "KB-01",
+      "KB-10"
+    ],
+    "generated_sources": [
+      "KB-01"
+    ],
+    "source_recall": 0.5,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer accurately explains that the red LOS indicator signifies an optical cable break causing internet failure and mentions the need to submit a repair request, matching the expected answer. All claims are fully supported by the cited KB context, which clearly states that a red LOS indicator means an optical cable break and a request is necessary."
+  },
+  {
+    "id": "G02",
+    "question": "Я заплатив, але інтернету немає, лампочки всі зелені",
+    "category": "confusable",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Після оплати доступ відновлюється автоматично протягом 15 хвилин. Зелені індикатори можуть відповідати блокуванню через борг.",
+    "generated_answer": "Якщо індикатори роутера зелені, доступ до інтернету автоматично відновлюється протягом 15 хвилин після оплати. Якщо інтернету немає, хоча оплата зроблена, можливо, справа не у блокуванні — подальша інформація в базі відсутня.",
+    "expected_sources": [
+      "KB-04"
+    ],
+    "generated_sources": [
+      "KB-04"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 1,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly states that access is automatically restored within 15 minutes after payment if the indicators are green, which aligns with the KB. However, it fails to mention that green indicators can still correspond to a blockage due to debt, which is important given the user's issue. All claims made are fully supported by the KB, hence full faithfulness."
+  },
+  {
+    "id": "G03",
+    "question": "Хочу перейти на дешевший тариф",
+    "category": "single_source",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Зниження тарифу діє з наступного розрахункового періоду. Змінити тариф можна в особистому кабінеті, безкоштовно раз на місяць.",
+    "generated_answer": "Щоб перейти на дешевший тариф, потрібно змінити тариф у особистому кабінеті в розділі «Тариф». Зниження тарифу набирає чинності з наступного розрахункового періоду. Зміна тарифу є безкоштовною раз на місяць.",
+    "expected_sources": [
+      "KB-05"
+    ],
+    "generated_sources": [
+      "KB-05"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer fully matches the expected answer in meaning and accurately reflects the information from the cited KB context, including process, timing, and cost of changing to a cheaper tariff."
+  },
+  {
+    "id": "G04",
+    "question": "Чому в мене швидкість 70 замість 200?",
+    "category": "single_source",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Ймовірною причиною може бути Wi-Fi 2.4 ГГц, який обмежений приблизно 70 Мбіт/с. Варто перевірити швидкість через кабель або 5 ГГц.",
+    "generated_answer": "Якщо ви вимірюєте швидкість по Wi-Fi на частоті 2.4 ГГц, максимальна швидкість обмежена приблизно 70 Мбіт/с. Для швидкості 200 Мбіт/с рекомендується використовувати частоту 5 ГГц або підключення через кабель. Якщо ж ви вже користуєтесь кабельним підключенням і швидкість нижча за тарифну, це може бути підставою для створення заявки на перевірку.",
+    "expected_sources": [
+      "KB-06"
+    ],
+    "generated_sources": [
+      "KB-06"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer fully explains the likely cause of the 70 Mbps speed, attributing it to Wi-Fi 2.4 GHz limitation, and advises checking speed via 5 GHz Wi-Fi or cable, which matches the expected answer. All factual claims are supported by the cited KB context KB-06, including the note about creating a service ticket if speed remains low over cable."
+  },
+  {
+    "id": "G05",
+    "question": "Скільки коштує виклик майстра?",
+    "category": "single_source",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Якщо проблема на боці провайдера, базовий виїзд у межах міста безкоштовний. Якщо проблема на боці абонента, виїзд платний за прайсом.",
+    "generated_answer": "Базовий виїзд майстра у межах міста безкоштовний, якщо аварія на боці провайдера. Якщо проблема на боці абонента (його обладнання, перенесення кабелю), виклик майстра платний за прайсом.",
+    "expected_sources": [
+      "KB-08"
+    ],
+    "generated_sources": [
+      "KB-08"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer fully and accurately conveys the pricing details from the KB: free basic visit within the city if the issue is on the provider's side, paid if on the subscriber's side, matching the expected answer. All claims are directly supported by the cited KB content."
+  },
+  {
+    "id": "G06",
+    "question": "Чи можна заморозити інтернет на час відпустки?",
+    "category": "single_source",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Так. Опція «Канікули» дозволяє призупинити послугу на 1–3 місяці за 30 грн на місяць.",
+    "generated_answer": "Інтернет можна призупинити на 1–3 місяці за опцією «Канікули» (30 грн/міс), при цьому тариф і IP зберігаються, а інтернет не працює.",
+    "expected_sources": [
+      "KB-09"
+    ],
+    "generated_sources": [
+      "KB-09"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer fully addresses the question by explaining that the internet can be frozen for 1-3 months using the 'Канікули' option for 30 UAH per month, preserving the tariff and IP, and stating that the internet will not work during this period. This matches the expected answer and is fully supported by the cited KB context."
+  },
+  {
+    "id": "G07",
+    "question": "Що таке LOS?",
+    "category": "exact_term",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Червоний індикатор LOS означає обрив оптичного кабелю, у такому випадку потрібна заявка.",
+    "generated_answer": "LOS — це індикатор на роутері, який світиться червоним, коли є обрив оптичного кабелю і потрібна заявка на ремонт.",
+    "expected_sources": [
+      "KB-01"
+    ],
+    "generated_sources": [
+      "KB-01"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly and fully explains that LOS is a red indicator signifying an optical cable break and that a repair request is needed, exactly matching the expected answer and supported fully by the cited KB context."
+  },
+  {
+    "id": "G08",
+    "question": "Скільки коштує Гіга 1000?",
+    "category": "exact_fact",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Тариф «Гіга 1000» коштує 450 грн на місяць і має швидкість 1 Гбіт/с.",
+    "generated_answer": "Тариф \"Гіга 1000\" з швидкістю 1 Гбіт/с коштує 450 гривень на місяць.",
+    "expected_sources": [
+      "KB-11"
+    ],
+    "generated_sources": [
+      "KB-11"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly states the price of the 'Гіга 1000' tariff as 450 грн per month and the speed as 1 Гбіт/с, fully matching the cited KB context. All claims are directly supported by KB-11, with no unsupported information."
+  },
+  {
+    "id": "G09",
+    "question": "Чи можна підключити кабельне ТБ?",
+    "category": "out_of_kb",
+    "expected_answerable": false,
+    "generated_answerable": false,
+    "answerability_correct": true,
+    "expected_answer": "У базі знань немає інформації про кабельне телебачення. Потрібно запропонувати звернення до оператора.",
+    "generated_answer": "У базі знань немає достатньої інформації, щоб відповісти на це запитання. Будь ласка, зверніться до оператора.",
+    "expected_sources": [],
+    "generated_sources": [],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly addresses the question by stating the lack of sufficient information and advising the user to contact the operator, consistent with the expected answer. Since no KB context was cited, the response is faithful as it does not include unsupported claims."
+  },
+  {
+    "id": "G10",
+    "question": "Можна на два місяці призупинити послугу, але не втратити тариф?",
+    "category": "paraphrase",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Так. Опція «Канікули» дозволяє призупинити послугу на 1–3 місяці, при цьому тариф та IP зберігаються. Вартість — 30 грн на місяць.",
+    "generated_answer": "Послугу можна призупинити на 1–3 місяці за опцією «Канікули» (30 грн/місяць), при цьому тариф і IP зберігаються.",
+    "expected_sources": [
+      "KB-09"
+    ],
+    "generated_sources": [
+      "KB-09"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer fully and correctly addresses the user's question about suspending the service for two months without losing the tariff, matching the expected answer's details. All information provided is directly supported by the cited KB context without any unsupported claims."
+  },
+  {
+    "id": "G11",
+    "question": "Через скільки часу після оплати має відновитися інтернет?",
+    "category": "exact_fact",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Після оплати доступ має відновитися автоматично протягом 15 хвилин.",
+    "generated_answer": "Після оплати Інтернет відновлюється автоматично протягом 15 хвилин.",
+    "expected_sources": [
+      "KB-04"
+    ],
+    "generated_sources": [
+      "KB-04"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly and fully answers the question about the time for internet restoration after payment, stating it is within 15 minutes as confirmed by the KB context. All factual claims are directly supported by the cited KB source."
+  },
+  {
+    "id": "G12",
+    "question": "Інтернет працює, але швидкість сильно нижча за тарифну. Що перевірити?",
+    "category": "paraphrase",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Швидкість варто перевірити через кабель, а не Wi-Fi. Для тарифів понад 100 Мбіт/с слід використовувати 5 ГГц або кабель.",
+    "generated_answer": "Якщо швидкість інтернету нижча за тарифну, спочатку виміряйте її через кабель, а не через Wi-Fi. Wi-Fi на частоті 2.4 ГГц обмежений приблизно 70 Мбіт/с. Для тарифів понад 100 Мбіт/с рекомендується використовувати 5 ГГц або кабель. Якщо навіть через кабель швидкість занижена, створюється заявка.",
+    "expected_sources": [
+      "KB-06"
+    ],
+    "generated_sources": [
+      "KB-06"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer fully addresses the user's question by advising to check the speed via cable rather than Wi-Fi and specifying the use of 5 GHz or cable for tariffs over 100 Mbps, matching the expected answer. All factual claims in the generated answer are fully supported by the cited KB context with no unsupported statements."
+  },
+  {
+    "id": "G13",
+    "question": "У мене червоний LOS. Що це означає і куди звертатися?",
+    "category": "multi_source",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Червоний LOS означає обрив оптичного кабелю. Потрібна заявка, а для повних обривів аварійна лінія працює цілодобово.",
+    "generated_answer": "Червоний індикатор LOS означає обрив оптичного кабелю, необхідно подати заявку на усунення проблеми. Для повних обривів діє цілодобова аварійна лінія.",
+    "expected_sources": [
+      "KB-01",
+      "KB-10"
+    ],
+    "generated_sources": [
+      "KB-01",
+      "KB-10"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly and fully explains that a red LOS indicator means an optical cable break and that a request is needed for repair. It also mentions the 24/7 emergency line for full breaks, which is supported by the cited KB context. Therefore, it is fully correct and fully faithful to the sources."
+  },
+  {
+    "id": "G14",
+    "question": "Скільки коштує оренда роутера?",
+    "category": "exact_fact",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Оренда роутера коштує 50 грн на місяць.",
+    "generated_answer": "Оренда роутера коштує 50 грн на місяць.",
+    "expected_sources": [
+      "KB-07"
+    ],
+    "generated_sources": [
+      "KB-07"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly states the rental price of the router as 50 грн per month, fully matching the expected answer. This price is directly supported by the cited KB context, which states that router rental costs 50 грн/month."
+  },
+  {
+    "id": "G15",
+    "question": "Коли виклик майстра буде безкоштовним?",
+    "category": "policy_condition",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Базовий виїзд у межах міста безкоштовний, якщо аварія виникла на боці провайдера.",
+    "generated_answer": "Виклик майстра у межах міста є безкоштовним у разі аварії на боці провайдера. Якщо проблеми виникають на боці абонента (його обладнання чи перенесення кабелю), виклик майстра оплачуються за прайсом.",
+    "expected_sources": [
+      "KB-08"
+    ],
+    "generated_sources": [
+      "KB-08"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer fully and correctly matches the expected answer by stating that the master call within the city is free if the problem is on the provider's side and paid if on the subscriber's side. All claims are directly supported by the cited KB-08 content, making it fully faithful."
+  },
+  {
+    "id": "G16",
+    "question": "Чи можна отримати статичну IP-адресу?",
+    "category": "out_of_kb",
+    "expected_answerable": false,
+    "generated_answerable": false,
+    "answerability_correct": true,
+    "expected_answer": "У базі знань немає інформації про можливість отримання статичної IP-адреси. Потрібно запропонувати звернення до оператора.",
+    "generated_answer": "У базі знань немає достатньої інформації, щоб відповісти на це запитання. Будь ласка, зверніться до оператора.",
+    "expected_sources": [],
+    "generated_sources": [],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly addresses the user's question by indicating that the knowledge base lacks sufficient information and recommends contacting the operator, which matches the expected answer. Since no KB context was cited, the generated answer does not contain any unsupported claims and remains fully faithful."
+  },
+  {
+    "id": "G17",
+    "question": "Чи входить Netflix або телебачення у ваші тарифи?",
+    "category": "out_of_kb",
+    "expected_answerable": false,
+    "generated_answerable": true,
+    "answerability_correct": false,
+    "expected_answer": "У базі знань немає інформації про Netflix або телебачення у тарифах. Потрібно запропонувати звернення до оператора.",
+    "generated_answer": "У тарифах NetLink, згідно з наданим контекстом, не зазначено, що Netflix або телебачення входять у вартість.",
+    "expected_sources": [],
+    "generated_sources": [
+      "KB-11"
+    ],
+    "source_recall": 0.0,
+    "source_precision": 0.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly states that Netflix or television are not included in the tariffs based on the provided KB context, which only details internet speeds and prices without mention of Netflix or TV services. All factual claims are fully supported by the cited KB source."
+  },
+  {
+    "id": "G18",
+    "question": "Мій орендований роутер зламався. Що з ним робити?",
+    "category": "paraphrase",
+    "expected_answerable": true,
+    "generated_answerable": true,
+    "answerability_correct": true,
+    "expected_answer": "Несправний орендований роутер можна безкоштовно замінити в офісі.",
+    "generated_answer": "Якщо роутер орендований і зламався, його можна безкоштовно замінити в офісі NetLink.",
+    "expected_sources": [
+      "KB-07"
+    ],
+    "generated_sources": [
+      "KB-07"
+    ],
+    "source_recall": 1.0,
+    "source_precision": 1.0,
+    "correctness": 2,
+    "faithfulness": 2,
+    "judge_reason": "The generated answer correctly addresses the user's question about a broken rented router by stating it can be replaced for free in the office, exactly as supported by the KB source. All claims in the answer are fully supported by the cited knowledge base content."
+  }
+]

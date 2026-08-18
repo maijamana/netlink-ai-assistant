@@ -1,0 +1,18 @@
+
+=== FINAL EVALUATION TABLE ===
+
+Version        Hit@1     Hit@3       MRR  Retrieval Src R@3   Answerability  Citation Recall Citation Precision   Correctness    Faithfulness
+------------------------------------------------------------------------------------------------------------------------------------------------------
+v1             0.933     1.000     0.967              0.967           0.944            0.917              0.944         0.972           1.000
+v2             0.933     1.000     0.967              0.967           1.000            0.972              0.963         1.000           1.000
+
+=== CHANGE v1 -> v2 ===
+
+answerability_accuracy   0.944 -> 1.000 (Δ +0.056)
+citation_recall          0.917 -> 0.972 (Δ +0.056)
+citation_precision       0.944 -> 0.963 (Δ +0.019)
+correctness              0.972 -> 1.000 (Δ +0.028)
+faithfulness             1.000 -> 1.000 (Δ +0.000)
+
+CSV results saved to: results/comparison/evaluation_results.csv
+
